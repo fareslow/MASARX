@@ -1,14 +1,46 @@
 ﻿# MASARX
 
-منصة SaaS لوجستية لإدارة الطلبات والشحن والتكاملات والتتبع من مكان واحد، مع موقع تسويقي قبل التسجيل ولوحات تشغيل بعد التسجيل.
+MASARX is a logistics SaaS platform that combines a marketing website, signup and onboarding flows, customer operations dashboards, an internal admin console, and a modular backend foundation for orders, shipping, pricing, integrations, and tracking.
 
-في هذه المرحلة تم تجهيز وثائق التأسيس المعماري والمنتجي قبل البدء في التنفيذ الفعلي.
+## Workspace Structure
 
-## المستندات
+- `apps/web`: marketing website, auth, onboarding, public tracking, and customer dashboard shell
+- `apps/admin`: internal admin console shell
+- `apps/api`: modular NestJS backend foundation
+- `apps/worker`: worker/queue service shell for background jobs
+- `packages/database`: Prisma schema for the core domain model
+- `docs`: product, architecture, MVP, and platform planning documents
 
-- [نظرة عامة على التوثيق](docs/README.md)
-- [المعمارية المقترحة](docs/01-system-architecture.md)
-- [تصور قاعدة البيانات و ERD](docs/02-data-model-erd.md)
-- [تدفقات المستخدم](docs/03-user-flows.md)
-- [خطة MVP والجدول الزمني](docs/04-mvp-roadmap.md)
-- [خطة التكاملات والتسعير والأمان والتشغيل](docs/05-platform-plan.md)
+## Prerequisites
+
+- Node.js 20+
+- npm 10+
+- PostgreSQL 15+
+
+## Quick Start
+
+1. Install dependencies
+   `npm install`
+2. Copy environment variables
+   `copy .env.example .env`
+3. Run the website
+   `npm run dev:web`
+4. Run the admin console
+   `npm run dev:admin`
+5. Run the API
+   `npm run dev:api`
+
+## Current Scope Implemented
+
+- Strong multilingual marketing website structure with major pre-signup pages
+- Interactive shipping calculator shell with internal quote logic
+- Public tracking page
+- Signup, sign-in, and onboarding flows
+- Customer dashboard shell for orders, shipments, integrations, tracking, and reports
+- Internal admin console shell
+- Modular API skeleton with pricing, tracking, webhooks, orders, shipments, auth, and integrations modules
+- Prisma schema covering the core SaaS logistics data model
+
+## Notes
+
+This repository was scaffolded in an environment where Node/npm were not available on the PATH, so the codebase was prepared but not executed locally in this session.
