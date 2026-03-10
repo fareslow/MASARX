@@ -1,4 +1,4 @@
-﻿# MASARX
+# MASARX
 
 MASARX is a logistics SaaS platform that combines a marketing website, signup and onboarding flows, customer operations dashboards, an internal admin console, and a modular backend foundation for orders, shipping, pricing, integrations, and tracking.
 
@@ -44,3 +44,13 @@ MASARX is a logistics SaaS platform that combines a marketing website, signup an
 ## Notes
 
 This repository was scaffolded in an environment where Node/npm were not available on the PATH, so the codebase was prepared but not executed locally in this session.
+
+## Vercel Deployment
+
+For Vercel, the root build is configured to deploy the customer-facing Next.js app in `apps/web`.
+
+Recommended project setting:
+- Root Directory: repository root is acceptable with the current `vercel.json`
+- Preferred alternative for stricter isolation: set Vercel Root Directory to `apps/web`
+
+If you later want a separate Vercel deployment for the internal admin app, create a second Vercel project pointed at `apps/admin`.
