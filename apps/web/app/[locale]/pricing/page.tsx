@@ -1,8 +1,8 @@
-﻿import Link from 'next/link';
-import { MarketingFooter } from '@/src/components/MarketingFooter';
-import { MarketingHeader } from '@/src/components/MarketingHeader';
-import { PageHero } from '@/src/components/PageHero';
-import { getDictionary, isLocale, localizePath } from '@/src/lib/i18n';
+import Link from 'next/link';
+import { MarketingFooter } from '@/components/MarketingFooter';
+import { MarketingHeader } from '@/components/MarketingHeader';
+import { PageHero } from '@/components/PageHero';
+import { getDictionary, isLocale, localizePath } from '@/lib/i18n';
 import { notFound } from 'next/navigation';
 
 export default function PricingPage({ params }: { params: { locale: string } }) {

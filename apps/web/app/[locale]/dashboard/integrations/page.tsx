@@ -1,4 +1,4 @@
-﻿import { integrationsCards } from '@/src/lib/mock-data';
+import { integrationsCards } from '@/lib/mock-data';
 
 export default function IntegrationsDashboardPage() {
   return (

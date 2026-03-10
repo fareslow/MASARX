@@ -1,4 +1,4 @@
-﻿import { reportHighlights } from '@/src/lib/mock-data';
+import { reportHighlights } from '@/lib/mock-data';
 
 export default function ReportsPage() {
   return (

@@ -1,9 +1,9 @@
-﻿import Link from 'next/link';
-import { CalculatorWidget } from '@/src/components/CalculatorWidget';
-import { MarketingFooter } from '@/src/components/MarketingFooter';
-import { MarketingHeader } from '@/src/components/MarketingHeader';
-import { SectionHeading } from '@/src/components/SectionHeading';
-import { getDictionary, isLocale, localizePath } from '@/src/lib/i18n';
+import Link from 'next/link';
+import { CalculatorWidget } from '@/components/CalculatorWidget';
+import { MarketingFooter } from '@/components/MarketingFooter';
+import { MarketingHeader } from '@/components/MarketingHeader';
+import { SectionHeading } from '@/components/SectionHeading';
+import { getDictionary, isLocale, localizePath } from '@/lib/i18n';
 import { notFound } from 'next/navigation';
 
 export default function HomePage({ params }: { params: { locale: string } }) {

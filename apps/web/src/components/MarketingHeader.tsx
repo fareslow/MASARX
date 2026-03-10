@@ -1,5 +1,5 @@
-﻿import Link from 'next/link';
-import { SiteDictionary, localizePath } from '@/src/lib/i18n';
+import Link from 'next/link';
+import { SiteDictionary, localizePath } from '@/lib/i18n';
 
 export function MarketingHeader({ locale, dictionary }: { locale: string; dictionary: SiteDictionary }) {
   const currentLocale = locale === 'en' ? 'en' : 'ar';

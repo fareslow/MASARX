@@ -1,4 +1,4 @@
-﻿import { ordersTable } from '@/src/lib/mock-data';
+import { ordersTable } from '@/lib/mock-data';
 
 export default function OrdersPage() {
   return (

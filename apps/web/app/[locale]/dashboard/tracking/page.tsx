@@ -1,4 +1,4 @@
-﻿import { TrackingLookup } from '@/src/components/TrackingLookup';
+import { TrackingLookup } from '@/components/TrackingLookup';
 
 export default function DashboardTrackingPage() {
   return (

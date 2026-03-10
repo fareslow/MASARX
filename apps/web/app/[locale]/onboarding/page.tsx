@@ -1,8 +1,8 @@
-﻿import Link from 'next/link';
-import { MarketingFooter } from '@/src/components/MarketingFooter';
-import { MarketingHeader } from '@/src/components/MarketingHeader';
-import { getDictionary, isLocale, localizePath } from '@/src/lib/i18n';
-import { onboardingSteps } from '@/src/lib/mock-data';
+import Link from 'next/link';
+import { MarketingFooter } from '@/components/MarketingFooter';
+import { MarketingHeader } from '@/components/MarketingHeader';
+import { getDictionary, isLocale, localizePath } from '@/lib/i18n';
+import { onboardingSteps } from '@/lib/mock-data';
 import { notFound } from 'next/navigation';
 
 export default function OnboardingPage({ params }: { params: { locale: string } }) {

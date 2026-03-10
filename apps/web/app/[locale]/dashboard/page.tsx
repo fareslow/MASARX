@@ -1,4 +1,4 @@
-﻿import { alertsFeed, dashboardMetrics, integrationsCards, ordersTable, shipmentsTable } from '@/src/lib/mock-data';
+import { alertsFeed, dashboardMetrics, integrationsCards, ordersTable, shipmentsTable } from '@/lib/mock-data';
 
 export default function DashboardPage() {
   return (

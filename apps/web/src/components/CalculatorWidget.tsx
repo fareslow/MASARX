@@ -1,7 +1,7 @@
-﻿'use client';
+'use client';
 
 import { useState } from 'react';
-import { buildQuotes, domesticCities, internationalCities, QuoteInput } from '@/src/lib/quote-engine';
+import { buildQuotes, domesticCities, internationalCities, QuoteInput } from '@/lib/quote-engine';
 
 const initialState: QuoteInput = {
   originCity: domesticCities[0],

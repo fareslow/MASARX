@@ -1,8 +1,8 @@
-﻿import { CalculatorWidget } from '@/src/components/CalculatorWidget';
-import { MarketingFooter } from '@/src/components/MarketingFooter';
-import { MarketingHeader } from '@/src/components/MarketingHeader';
-import { PageHero } from '@/src/components/PageHero';
-import { getDictionary, isLocale } from '@/src/lib/i18n';
+import { CalculatorWidget } from '@/components/CalculatorWidget';
+import { MarketingFooter } from '@/components/MarketingFooter';
+import { MarketingHeader } from '@/components/MarketingHeader';
+import { PageHero } from '@/components/PageHero';
+import { getDictionary, isLocale } from '@/lib/i18n';
 import { notFound } from 'next/navigation';
 
 export default function CalculatorPage({ params }: { params: { locale: string } }) {

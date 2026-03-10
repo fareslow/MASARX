@@ -1,7 +1,7 @@
-﻿'use client';
+'use client';
 
 import { useState } from 'react';
-import { trackingRecords } from '@/src/lib/mock-data';
+import { trackingRecords } from '@/lib/mock-data';
 
 export function TrackingLookup() {
   const [query, setQuery] = useState('MSX-883912');

@@ -1,4 +1,4 @@
-﻿import { shipmentsTable } from '@/src/lib/mock-data';
+import { shipmentsTable } from '@/lib/mock-data';
 
 export default function ShipmentsPage() {
   return (

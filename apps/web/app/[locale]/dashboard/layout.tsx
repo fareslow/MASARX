@@ -1,6 +1,6 @@
-﻿import Link from 'next/link';
-import { DashboardSidebar } from '@/src/components/DashboardSidebar';
-import { getDictionary, isLocale, localizePath } from '@/src/lib/i18n';
+import Link from 'next/link';
+import { DashboardSidebar } from '@/components/DashboardSidebar';
+import { getDictionary, isLocale, localizePath } from '@/lib/i18n';
 import { notFound } from 'next/navigation';
 
 export default function DashboardLayout({ children, params }: Readonly<{ children: React.ReactNode; params: { locale: string } }>) {
