@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --bg: #f7f4ec;
   --surface: rgba(255, 255, 255, 0.82);
   --surface-strong: #fffefa;
@@ -691,4 +691,17 @@ summary + p {
   .hero-metrics {
     grid-template-columns: 1fr;
   }
+}
+
+h1,
+h2,
+h3,
+.brand-lockup strong,
+.sidebar-brand strong,
+.button,
+.price,
+.quote-price,
+.metric-card strong,
+.summary-card strong {
+  font-family: var(--font-handicrafts), "IBM Plex Sans Arabic", "Plus Jakarta Sans", "Segoe UI", sans-serif;
 }
